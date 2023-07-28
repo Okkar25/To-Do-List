@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List</title>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body class="bg-warning-subtle">
+    <main id="app" class="p-5">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6">
+            <h1 class="mb-3 text-center">To-do List</h1>
+
+            <form action="#" id="createForm">
+              <div class="input-group" id="dataInput">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="textInput"
+                  required
+                />
+                <button class="btn btn-primary btn-lg" id="addBtn">
+                  <i class="bi bi-plus"></i>
+                </button>
+              </div>
+            </form>
+
+            <div class="d-flex justify-content-between my-3">
+              <h4 class="mb-0">Your List</h4>
+              <h4 class="badge bg-primary py-2 px-3 rounded-pill">
+                Done ( <span id="doneCount"> 0 </span> /
+                <span id="totalListCount"> 0 </span> )
+              </h4>
+            </div>
+
+            <div class="lists">
+              <div class="empty-list">
+                <div
+                  class="d-flex flex-column align-items-center py-5 animate__animated animate__tada"
+                >
+                  <img src="./images/empty.svg" class="w-25 mb-4" alt="" />
+                  <p class="fs-5">No List inserted</p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              id="allSelect"
+              class="btn btn-outline-secondary rounded-pill w-50 d-block mx-auto"
+            >
+              Select All
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
